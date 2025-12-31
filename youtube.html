@@ -2,50 +2,126 @@
 <html>
     <head>
         <title>YouTube.com Clone</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        
         <style>
-            .thumbnail {
-                width: 300px; 
-                display: block;
+            p{
+                font-family: 'Roboto', Arial;
+                margin-top: 0px;
+                margin-bottom: 0px;
             }
+       
             .search-bar {
                 display: block;
                
             }
-            .video-title{
-                width: 300px;
-            }
             .video-preview{
-                margin-right: 12px;
                 width: 300px;
                 display: inline-block;
                 vertical-align: top;
+                margin-right: 15px;
+
+            }
+
+            .thumbnail {
+                width: 300px; 
+                display: block;
+            }
+            .video-title{
+                margin-top: 0px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 10px;
+            }
+
+            .video-author, .video-stats{
+                font-size: 12px;
+                color: rgb(96,96,96);
+                margin-bottom: 4px;
+            }
+
+            
+            .channel-picture {
+                display: inline-block;
+                width: 50px;
+                vertical-align: top;
+                background-color: grey;
+
+            }
+            .profile-picture{
+                width: 40px;
+                border-radius: 30px;
+            }
+            .video-info{
+                
+                display: inline-block;
+                width: 245px;
+                                background-color: grey;
+
+            }
+
+            .thumbnail-row
+            {
+                margin-bottom: 12px;
             }
         </style>
     </head>
     <body>
         <input class="search-bar" type="text" placeholder="Search">
 
+        <!-- Video Previews -->
         <div class="video-preview">
-            <img class="thumbnail" src="thumbnails/thumbnail1.avif">
+            <!-- Video Thumbnail -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail1.avif">
+            </div>
 
-            <p class="video-title"> YoungBoy Never Broke Again - 
-                Outside Today [Official Music Video]
-            </p>
+            <!-- Video Info -->
+            <div>
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-picture/channel1.jpg">
+                </div>
 
-            <p class="video-author"> YoungBoy Never Broke Again &#9834;</p>
+                <div class="video-info">
+                     <p class="video-title"> YoungBoy Never Broke Again - 
+                    Outside Today [Official Music Video]
+                    </p>
 
-            <p class="video-stats">249M views &#183; 7 years ago</p>
+                    <p class="video-author"> YoungBoy Never Broke Again &#9834;</p>
+
+                    <p class="video-stats">249M views &#183; 7 years ago</p>
+                </div>
+            </div>
         </div>
 
+        <!-- Video Previews -->
         <div class="video-preview">
-            <img class="thumbnail" src="thumbnails/thumbnail2.avif">
+            <!-- Video Thumbnail -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/thumbnail2.avif">
+            </div>
 
-            <p class="video-title"> Katt Williams Unleashed | CLUB SHAY SHAY
-            </p>
+            <!-- Video Info -->
+            <div>
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-picture/channel2.jpg">
+                </div>
 
-            <p class="video-author"> Club Shay Shay</p>
+                <div class="video-info">
+                     <p class="video-title"> Katt Williams Unleashed | CLUB SHAY SHAY
 
-            <p class="video-stats">91M views &#183; 1 year ago</p>
+                    </p>
+
+                    <p class="video-author"> Club Shay Shay &#9834;</p>
+
+                    <p class="video-stats">91M views &#183; 1 year ago</p>
+                </div>
+            </div>
         </div>
     </body>
 
