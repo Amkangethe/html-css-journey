@@ -19,17 +19,10 @@
                 display: block;
                
             }
-            .video-preview{
-                width: 300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 15px;
 
-            }
 
             .thumbnail {
-                width: 300px; 
-                display: block;
+                width: 100%;
             }
             .video-title{
                 margin-top: 0px;
@@ -45,26 +38,24 @@
                 margin-bottom: 4px;
             }
 
-            
-            .channel-picture {
-                display: inline-block;
-                width: 50px;
-                vertical-align: top;
-                background-color: grey;
-
+            .video-info-grid{
+                display: grid;
+                grid-template-columns: 50px 1fr;
             }
+
+
+            .video-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 16px;
+                row-gap: 40px;
+            }
+            
             .profile-picture{
                 width: 40px;
                 border-radius: 30px;
             }
-            .video-info{
-                
-                display: inline-block;
-                width: 245px;
-                                background-color: grey;
-
-            }
-
+     
             .thumbnail-row
             {
                 margin-bottom: 12px;
@@ -75,54 +66,158 @@
         <input class="search-bar" type="text" placeholder="Search">
 
         <!-- Video Previews -->
-        <div class="video-preview">
-            <!-- Video Thumbnail -->
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail1.avif">
-            </div>
-
-            <!-- Video Info -->
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="channel-picture/channel1.jpg">
+        
+        <div class="video-grid">
+            <div class="video-preview">
+                <!-- Video Thumbnail -->
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail1.avif">
                 </div>
 
-                <div class="video-info">
-                     <p class="video-title"> YoungBoy Never Broke Again - 
-                    Outside Today [Official Music Video]
-                    </p>
 
-                    <p class="video-author"> YoungBoy Never Broke Again &#9834;</p>
+                <!-- Video Info -->
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-picture/channel1.jpg">
+                    </div>
 
-                    <p class="video-stats">249M views &#183; 7 years ago</p>
+                    <div class="video-info">
+                        <p class="video-title"> YoungBoy Never Broke Again - 
+                        Outside Today [Official Music Video]
+                        </p>
+
+                        <p class="video-author"> YoungBoy Never Broke Again &#9834;</p>
+
+                        <p class="video-stats">249M views &#183; 7 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Previews -->
+            <div class="video-preview">
+                <!-- Video Thumbnail -->
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail2.avif">
+                </div>
+
+                <!-- Video Info -->
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-picture/channel2.jpg">
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title"> Katt Williams Unleashed | CLUB SHAY SHAY
+
+                        </p>
+
+                        <p class="video-author"> Club Shay Shay</p>
+
+                        <p class="video-stats">91M views &#183; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Previews -->
+            <div class="video-preview">
+                <!-- Video Thumbnail -->
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail3.avif">
+                </div>
+
+
+                <!-- Video Info -->
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-picture/channel3.jpg">
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title"> 3 Thoughts That Wasted Years of My Life
+                        </p>
+
+                        <p class="video-author"> 3 Thoughts That Wasted Years of My Life</p>
+
+                        <p class="video-stats">147K views &#183; 2 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Previews -->
+            <div class="video-preview">
+                <!-- Video Thumbnail -->
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail4.avif">
+                </div>
+
+                <!-- Video Info -->
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-picture/channel4.jpg">
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title"> The Future of Design
+                        </p>
+
+                        <p class="video-author"> SpaceX</p>
+
+                        <p class="video-stats">91M views &#183; 12 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Previews -->
+            <div class="video-preview">
+                <!-- Video Thumbnail -->
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail5.avif">
+                </div>
+
+
+                <!-- Video Info -->
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-picture/channel5.jpg">
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title"> Interview: Regular Show Creator J.G. Quintel
+                        </p>
+
+                        <p class="video-author"> hottopic </p>
+
+                        <p class="video-stats">6.4M views &#183; 13 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Previews -->
+            <div class="video-preview">
+                <!-- Video Thumbnail -->
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail6.avif">
+                </div>
+
+                <!-- Video Info -->
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-picture/channel6.jpg">
+                    </div>
+
+                    <div class="video-info">
+                        <p class="video-title"> Katt Williams Unleashed | CLUB SHAY SHAY
+
+                        </p>
+
+                        <p class="video-author"> RDCworld1 </p>
+
+                        <p class="video-stats">30M views &#183; 6 year ago</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Video Previews -->
-        <div class="video-preview">
-            <!-- Video Thumbnail -->
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail2.avif">
-            </div>
-
-            <!-- Video Info -->
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="channel-picture/channel2.jpg">
-                </div>
-
-                <div class="video-info">
-                     <p class="video-title"> Katt Williams Unleashed | CLUB SHAY SHAY
-
-                    </p>
-
-                    <p class="video-author"> Club Shay Shay &#9834;</p>
-
-                    <p class="video-stats">91M views &#183; 1 year ago</p>
-                </div>
-            </div>
-        </div>
+        
     </body>
 
     
